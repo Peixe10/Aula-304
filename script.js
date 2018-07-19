@@ -38,3 +38,13 @@ function ex1(){
             break;
     }
 } 
+
+function ex2(){
+
+var frutas = ["ameixa", "mirtilo", "amora", "pitanga", "jabuticaba", "lixia", "atemoia"];
+
+for(var fruta=0; fruta<frutas.length; fruta++){
+    alert("minha salada de frutas tem: " + frutas[fruta]);
+
+ }
+}
