@@ -1,3 +1,4 @@
+
 function ex1(){
     
     /*Exercício: Escreva um programa que leia dois numeros e apresente um numero de opcoes com o o mostrado abaixo:
@@ -15,8 +16,10 @@ function ex1(){
     Lembre-se de usar funções para organizar seu programa
     
     parseFloat() parseInt() */
+
+    // Dica: Achar formas de escrever no JS ex: pular linha
     
-    var tipo = prompt("Escolha qual operação deseja: A (+), B(-), C(*) e D(/)").toUpperCase();
+    var tipo = prompt("Escolha qual operação deseja: \n A (Soma) \n B(Subtração) \n C(Multiplicação) \n D(Divisão)").toUpperCase();
     var num1 = parseInt(prompt("Digite um número"));
     var num2 = parseInt(prompt("Digite o outro número"));
     
@@ -34,4 +37,4 @@ function ex1(){
             alert(num1/num2);
             break;
     }
-}
+} 
