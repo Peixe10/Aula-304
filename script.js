@@ -16,7 +16,7 @@ function ex1(){
     Lembre-se de usar funções para organizar seu programa
     
     parseFloat() parseInt() */
-
+    
     // Dica: Achar formas de escrever no JS ex: pular linha
     
     var tipo = prompt("Escolha qual operação deseja: \n A (Soma) \n B(Subtração) \n C(Multiplicação) \n D(Divisão)").toUpperCase();
@@ -25,30 +25,30 @@ function ex1(){
     
     switch (tipo){
         case "A":
-            alert(num1 + num2);
-            break;
+        alert(num1 + num2);
+        break;
         case "B":
-            alert(num1 - num2);
-            break;
+        alert(num1 - num2);
+        break;
         case "C":
-            alert(num1 * num2);
-            break;
+        alert(num1 * num2);
+        break;
         case "D":
-            alert(num1/num2);
-            break;
+        alert(num1/num2);
+        break;
     }
 } 
 
 //Exemplo de FOR
 
 function ex2(){
-
-var frutas = ["ameixa", "mirtilo", "amora", "pitanga", "jabuticaba", "lixia", "atemoia"];
-
-for(var fruta=0; fruta<frutas.length; fruta++){
-    alert("minha salada de frutas tem: " + frutas[fruta]);
-
- }
+    
+    var frutas = ["ameixa", "mirtilo", "amora", "pitanga", "jabuticaba", "lixia", "atemoia"];
+    
+    for(var fruta=0; fruta<frutas.length; fruta++){
+        alert("minha salada de frutas tem: " + frutas[fruta]);
+        
+    }
 }
 
 //Exemplo de FOR IN
@@ -56,20 +56,38 @@ for(var fruta=0; fruta<frutas.length; fruta++){
 //Para imprimir as chaves e não o valor delas bastava colocar console log ([chave])
 
 function ex3(){
-
+    
     var saladeaula = {
         "alunos":40,
         "mesas":24,
         "cadeiras": 48,
         "projetor": "sim"
     }
-
-//Roda o numero de vezes que tiver os objetos e roda sempre as CHAVES. LOGO para ter acesso aos valores precisa fazer como esta abaixo.
-
+    
+    //Roda o numero de vezes que tiver os objetos e roda sempre as CHAVES. LOGO para ter acesso aos valores precisa fazer como esta abaixo.
+    
     for(chave in saladeaula){
         console.log(saladeaula[chave]);
+        
+    }
+    
+    
+}
 
+//Ex 4 Faca um programa que leia 2 numeros, some-os e exiba uma mensagem com o resultado apenas se o resultado for maior que 100.
+
+function ex4(){
+    
+    var num1 = parseInt(prompt("Digite um numero"));
+    var num2 = parseInt(prompt("Digite outro numero"));
+    
+    if ((num1 + num2) >= 100){
+        alert(num1 + num2);
+    }
+    else{
+        alert("A soma dos numeros é menor que 100 ");
     }
     
-    
-    }
+}
+
+//Ex 5 Escreva um programa que calcule e mostre a tabuada (numero * 1 numero * 2, ate numero *10 ) de um numero qualquer, dirigido pelo usuário.
